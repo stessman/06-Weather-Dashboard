@@ -1,0 +1,52 @@
+header {
+    color: white;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    background-image: 
+    linear-gradient(
+        to left,
+        rgb(11, 11, 68), blue
+    );
+}
+
+.container {
+    margin: 0px;
+}
+
+#todaysForecastArea {
+    border: 1px solid black;
+}
+
+#todaysForecastArea h1 {
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+#todaysForecastArea p {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: large;
+    padding-left: 5px;
+}
+
+#pastSearchArea {
+    padding: 10px;
+    padding-top: 20px;
+    border-top: 5px solid black;
+}
+
+button {
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+input {
+    width: 80%;
+}
+
+.upcomingDay {
+    background-color: rgb(14, 28, 58);
+    color: white;
+    margin-right: 10px;
+}
