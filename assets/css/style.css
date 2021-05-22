@@ -21,6 +21,7 @@ header {
 #todaysForecastArea h1 {
     margin-bottom: 30px;
     padding-left: 5px;
+    font-size: xx-large;
 }
 
 #todaysForecastArea p {
@@ -37,6 +38,7 @@ header {
 }
 
 button {
+    margin-top: 10px;
     margin-bottom: 10px;
     width: 80%;
 }
@@ -49,4 +51,5 @@ input {
     background-color: rgb(14, 28, 58);
     color: white;
     margin-right: 10px;
+    margin-top: 10px;
 }

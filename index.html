@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0/build/global/luxon.min.js"></script>
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -20,16 +27,15 @@
                 <input type="text" id="cityField" name="cityField" placeholder="San Diego" class="rounded">
                 <button type="button" class="btn btn-primary" id="citySearchButton">Search</button>
                 <div id="pastSearchArea">
-                    <h3>Search for a City: </h3>
             </div>
             </div>
           <div class="col-12 col-md-8 col-xl-9">
             <div id="todaysForecastArea">
-                <h1>Todays Forecast Area</h3>
-                <p>Temp: </p>
-                <p>Wind: </p>
-                <p>Humidity: </p>
-                <p>UV Index: </p>
+                <h1 id="locationName"><i id="currentLocationIcon" href="http://openweathermap.org/img/wn/10d@2x.png"></i></h3>
+                <p id="locationCurrentTemp">Temp: </p>
+                <p id="locationCurrentWind">Wind: </p>
+                <p id="locationCurrentHumidity">Humidity: </p>
+                <p id="locationCurrentIndex">UV Index: </p>
             </div>
             <div id="fiveDayForecastArea">
                 <h2>5-Day Forecast</h3>
@@ -144,6 +150,6 @@
     </div>
   </section>
   -->
-    <script></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
