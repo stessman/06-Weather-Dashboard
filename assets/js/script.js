@@ -30,7 +30,7 @@ function citySearchButtonHandler () {
         currentLocation = data.name;
         currentLocationLat = data.coord.lat;
         currentLocationLon = data.coord.lon;
-        iconLink = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png/";
+        iconLink = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png/";
         displayCurrentLocation();
         addCityToRecentSearch(currentLocation, currentLocationLat, currentLocationLon);
     });
@@ -75,7 +75,7 @@ function fillFiveDayForecast (data) {
         forecastDay = DateTime.fromSeconds(forecastDay);
         forecastDay = forecastDay.toLocaleString(DateTime.DATE_SHORT);
         dailyForecastSections[j].children[0].innerHTML = forecastDay;
-        iconLink = "https://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + "@2x.png/";
+        iconLink = "http://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + "@2x.png/";
         dailyForecastSections[j].children[1].src = iconLink;
         dailyForecastSections[j].children[2].innerHTML = "Temp: " + data.daily[i].temp.day + ' ' + '<span>&#176;</span>' + 'F';
         dailyForecastSections[j].children[3].innerHTML = "Wind: " + data.daily[i].wind_speed + " MPH";
